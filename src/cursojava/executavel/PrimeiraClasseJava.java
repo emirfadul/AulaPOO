@@ -104,7 +104,7 @@ public class PrimeiraClasseJava {
 							String disciplinaRemover = JOptionPane.showInputDialog(null,
 									"Informe a disciplina a ser removida [1, 2, 3 ou 4]");
 							aluno1.getDisciplinas().remove(Integer.valueOf(disciplinaRemover).intValue() - posicao);
-							posicao++; // Incremente 1 ao valor atual da vari�vel posicao
+							posicao++; // Incrementeewe 1 ao valor atual da vari�vel posicao
 							continuarRemover = JOptionPane.showConfirmDialog(null, "Deseja continuar a remover?");
 						}
 					}
@@ -177,7 +177,7 @@ public class PrimeiraClasseJava {
 		} catch (NullPointerException e) {
 			JOptionPane.showMessageDialog(null, "Opa um null pointer exception: " + e.getClass());
 
-		} catch (Exception e) {
+		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 
 			JOptionPane.showMessageDialog(null, "Erro insperado: " + e.getClass().getName());
@@ -191,7 +191,7 @@ public class PrimeiraClasseJava {
 
 	}
 
-	public static void lerArquivo() throws ExcecaoProcessarNota {
+	public static void lerArquivo() throws FileNotFoundException{
 
 		try {
 
@@ -200,7 +200,7 @@ public class PrimeiraClasseJava {
 
 		} catch (FileNotFoundException e) {
 
-			throw new ExcecaoProcessarNota(e.getMessage());
+			throw new FileNotFoundException(e.getMessage());
 
 		}
 

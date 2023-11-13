@@ -23,7 +23,7 @@ public class PrimeiraClasseJava {
 			lerArquivo();
 
 			/*
-			 * try { File fil = new File("~/line.txt"); Scanner scanner = new Scanner(fil);
+			 * try { File fil = new File("//home/emirfadul/line.txt"); Scanner scanner = new Scanner(fil);
 			 * 
 			 * } catch (FileNotFoundException e) { throw new
 			 * ExcecaoProcessarNota(e.getMessage());
@@ -157,7 +157,7 @@ public class PrimeiraClasseJava {
 						"Login ou senha inv�lido(s)! Acesso n�o autorizado! Pressione OK e tente novamente!");
 			}
 
-		} catch (NumberFormatException e) {
+		} catch (Exception e) {
 			StringBuilder saida = new StringBuilder();
 
 			e.printStackTrace();
@@ -174,14 +174,6 @@ public class PrimeiraClasseJava {
 
 			JOptionPane.showMessageDialog(null, "Erro de conversão de numero" + saida.toString());
 
-		} catch (NullPointerException e) {
-			JOptionPane.showMessageDialog(null, "Opa um null pointer exception: " + e.getClass());
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-
-			JOptionPane.showMessageDialog(null, "Erro insperado: " + e.getClass().getName());
-
 		} finally {
 
 			System.out.println("\n Obrigado pelo uso do sistema!");
@@ -193,7 +185,7 @@ public class PrimeiraClasseJava {
 
 	public static void lerArquivo() throws FileNotFoundException {
 
-		File fil = new File("~/line.txt");
+		File fil = new File("//home/emirfadul/line.txt");
 		Scanner scanner = new Scanner(fil);
 
 	}

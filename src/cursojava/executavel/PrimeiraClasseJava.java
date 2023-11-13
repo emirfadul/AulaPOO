@@ -102,7 +102,7 @@ public class PrimeiraClasseJava {
 
 						while (continuarRemover == 0) {
 							String disciplinaRemover = JOptionPane.showInputDialog(null,
-									"Informe a disciplina a ser rremovida [1, 2, 3 ou 4]");
+									"Informe a disciplina a ser removida [1, 2, 3 ou 4]");
 							aluno1.getDisciplinas().remove(Integer.valueOf(disciplinaRemover).intValue() - posicao);
 							posicao++; // Incremente 1 ao valor atual da vari�vel posicao
 							continuarRemover = JOptionPane.showConfirmDialog(null, "Deseja continuar a remover?");

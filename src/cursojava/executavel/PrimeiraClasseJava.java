@@ -23,11 +23,12 @@ public class PrimeiraClasseJava {
 			lerArquivo();
 
 			/*
-			 * try { File fil = new File("//home/emirfadul/line.txt"); Scanner scanner = new Scanner(fil);
+			 * try { 
+			 * 	File fil = new File("//home/emirfadul/line.txt"); 
+			 * 	Scanner scanner = new Scanner(fil);
 			 * 
 			 * } catch (FileNotFoundException e) { throw new
-			 * ExcecaoProcessarNota(e.getMessage());
-			 * 
+			 * ExcecaoProcessarNota(e.getMessage());			 * 
 			 * }
 			 */
 

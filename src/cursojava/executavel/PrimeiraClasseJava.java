@@ -193,16 +193,9 @@ public class PrimeiraClasseJava {
 
 	public static void lerArquivo() throws FileNotFoundException{
 
-		try {
-
 			File fil = new File("~/line.txt");
 			Scanner scanner = new Scanner(fil);
 
-		} catch (FileNotFoundException e) {
-
-			throw new FileNotFoundException(e.getMessage());
-
-		}
 
 	}
 }

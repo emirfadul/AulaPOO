@@ -23,13 +23,11 @@ public class PrimeiraClasseJava {
 			lerArquivo();
 
 			/*
-			 * try { 
-			 * 	File fil = new File("//home/emirfadul/line.txt"); 
-			 * 	Scanner scanner = new Scanner(fil);
+			 * try { File fil = new File("//home/emirfadul/line.txt"); Scanner scanner = new
+			 * Scanner(fil);
 			 * 
 			 * } catch (FileNotFoundException e) { throw new
-			 * ExcecaoProcessarNota(e.getMessage());			 * 
-			 * }
+			 * ExcecaoProcessarNota(e.getMessage()); * }
 			 */
 
 			String login = JOptionPane.showInputDialog("Informe o login:");
@@ -82,8 +80,10 @@ public class PrimeiraClasseJava {
 
 					for (int pos = 1; pos <= 1; pos++) {
 
-						String nomeDisciplina = JOptionPane.showInputDialog("Digite o nome da " + pos + "� disciplina:");
-						String notaDisciplina = JOptionPane.showInputDialog("Digite a nota da " + pos + "� disciplina:");
+						String nomeDisciplina = JOptionPane
+								.showInputDialog("Digite o nome da " + pos + "� disciplina:");
+						String notaDisciplina = JOptionPane
+								.showInputDialog("Digite a nota da " + pos + "� disciplina:");
 
 						Disciplina disciplina = new Disciplina();
 						disciplina.setDisciplina(nomeDisciplina);

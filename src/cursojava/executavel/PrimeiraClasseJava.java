@@ -82,10 +82,8 @@ public class PrimeiraClasseJava {
 
 					for (int pos = 1; pos <= 1; pos++) {
 
-						String nomeDisciplina = JOptionPane
-								.showInputDialog("Digite o nome da " + pos + "� disciplina:");
-						String notaDisciplina = JOptionPane
-								.showInputDialog("Digite a nota da " + pos + "� disciplina:");
+						String nomeDisciplina = JOptionPane.showInputDialog("Digite o nome da " + pos + "� disciplina:");
+						String notaDisciplina = JOptionPane.showInputDialog("Digite a nota da " + pos + "� disciplina:");
 
 						Disciplina disciplina = new Disciplina();
 						disciplina.setDisciplina(nomeDisciplina);
@@ -127,7 +125,8 @@ public class PrimeiraClasseJava {
 					}
 				}
 
-				System.out.println("Lista dos alunos APROVADOS! :)");
+				System.out.println("==============================");
+				System.out.println("Lista dos alunos APROVADOS! ");
 				System.out.println("==============================");
 				for (Aluno aluno : maps.get(StatusAluno.APROVADO)) {
 					System.out.println("Nome: " + aluno.getNome());
@@ -135,8 +134,7 @@ public class PrimeiraClasseJava {
 					System.out.println("--------------------------");
 				}
 				System.out.println("==============================");
-
-				System.out.println("Lista dos alunos REPROVADOS! :(");
+				System.out.println("Lista dos alunos REPROVADOS! ");
 				System.out.println("==============================");
 				for (Aluno aluno : maps.get(StatusAluno.REPROVADO)) {
 					System.out.println("Nome: " + aluno.getNome());
@@ -144,15 +142,13 @@ public class PrimeiraClasseJava {
 					System.out.println("--------------------------");
 				}
 				System.out.println("==============================");
-
-				System.out.println("Lista dos alunos em RECUPERA��O! ^ | ^");
+				System.out.println("Lista dos alunos em RECUPERAÇÃO!");
 				System.out.println("==============================");
 				for (Aluno aluno : maps.get(StatusAluno.RECUPERACAO)) {
 					System.out.println("Nome: " + aluno.getNome());
 					System.out.println("M�dia: " + aluno.getMediaNota());
 					System.out.println("--------------------------");
 				}
-				System.out.println("==============================");
 			} else {
 				JOptionPane.showMessageDialog(null,
 						"Login ou senha inv�lido(s)! Acesso n�o autorizado! Pressione OK e tente novamente!");

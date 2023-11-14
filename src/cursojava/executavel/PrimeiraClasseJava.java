@@ -81,9 +81,9 @@ public class PrimeiraClasseJava {
 					for (int pos = 1; pos <= 1; pos++) {
 
 						String nomeDisciplina = JOptionPane
-								.showInputDialog("Digite o nome da " + pos + "� disciplina:");
+								.showInputDialog("Digite o nome da " + pos + " disciplina:");
 						String notaDisciplina = JOptionPane
-								.showInputDialog("Digite a nota da " + pos + "� disciplina:");
+								.showInputDialog("Digite a nota da " + pos + " disciplina:");
 
 						Disciplina disciplina = new Disciplina();
 						disciplina.setDisciplina(nomeDisciplina);

@@ -8,7 +8,7 @@ import java.util.Objects;
  */
 public class Disciplina {
 
-	// Notas e disciplinas do aluno
+	// Notas e disciplinas do aluno, cada disciplina tera 4 notas.
 	private String disciplina;
 	private double[] nota = new double[4];
 

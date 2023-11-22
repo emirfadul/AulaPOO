@@ -114,12 +114,8 @@ public class ArrayVetor {
 
 				for (int posnota = 0; posnota < d.getNota().length; posnota++) {
 					System.out.println("A nota numero " + (posnota + 1) + " = " + d.getNota()[posnota]);
-
 				}
-
 			}
 		}
-
 	}
-
 }

@@ -9,6 +9,7 @@ public class DatasEmJava {
 
 	public static void main(String[] args) throws ParseException {
 
+		/*
 		Calendar calendar = Calendar.getInstance();
 
 		Date date = new Date();
@@ -37,16 +38,30 @@ public class DatasEmJava {
 		
 		System.out.println("Os segundos do dia no CALENDAR é: " + calendar.get(Calendar.SECOND));
 
-		System.out.println("Ano é : " + (1900 + date.getYear()));
+		System.out.println("Ano é: " + (1900 + date.getYear()));
 		
 		System.out.println("O ano no CALENDAR é: " + calendar.get(Calendar.YEAR));
 
 		System.out.println("data em milssegundos: " + date.getTime());
 
 		// ------------------- SIMPLE DATE FORMAT ------------------//
+		
 
 		SimpleDateFormat simpleDateformat = new SimpleDateFormat("dd/MM/yyyy");
+		
+		Date dataVencimentoBoleto = simpleDateformat.parse("21/12/2023");
+		
+		Date dataAtualHoje = simpleDateformat.parse("21/12/2023");
+		
+		if (dataVencimentoBoleto.after(dataAtualHoje)) {
 
+			System.out.println("Boleto EM DIA!");
+		}else {
+			System.out.println("Boleto VENCIDO!");
+		}
+		
+		
+        /*
 		System.out.println("Data em formato padrão: " + simpleDateformat.format(date));
 		
 		System.out.println("Data atual em formato CALENDAR: "+simpleDateformat.format(Calendar.getInstance().getTime()));
@@ -56,6 +71,25 @@ public class DatasEmJava {
 		System.out.println("Data em formato DBA: " + simpleDateformat.format(date));
 
 		System.out.println("Object date: " + simpleDateformat.parse("2023-12-19 20:22:33"));
-
+		*/
+		
+		
+		Calendar calendar = Calendar.getInstance();
+		
+		calendar.setTime(new SimpleDateFormat("dd-MM-yyyy").parse("21-12-2023"));
+		
+		System.out.println("Data atual: "+ calendar.getTime());
+		
+		calendar.add(Calendar.DAY_OF_MONTH, 20);
+		
+		System.out.println("Somando 20 dias: "+new SimpleDateFormat("dd-MM-yyyy").format(calendar.getTime()));
+		
+		calendar.add(Calendar.MONTH, 2);
+		
+		System.out.println("Somando dois meses: "+new SimpleDateFormat("dd-MM-yyyy").format(calendar.getTime()));
+		
+		calendar.add(Calendar.YEAR, 1);
+		
+		System.out.println("Somando 1 ano: "+new SimpleDateFormat("dd-MM-yyyy").format(calendar.getTime()));
 	}
 }

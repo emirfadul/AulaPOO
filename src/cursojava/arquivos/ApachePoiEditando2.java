@@ -29,7 +29,7 @@ public class ApachePoiEditando2 {
 			
 			String valorCelula = linha.getCell(0).getStringCellValue();
 			
-			linha.getCell(0).setCellValue(valorCelula + " * valor gravado na aula");
+			linha.getCell(0).setCellValue(valorCelula + " * valor gravado na aula **");
 						
 		}
 		
